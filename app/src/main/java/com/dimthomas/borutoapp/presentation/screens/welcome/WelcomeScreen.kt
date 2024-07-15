@@ -38,6 +38,7 @@ import com.dimthomas.borutoapp.ui.theme.descriptionColor
 import com.dimthomas.borutoapp.ui.theme.inactiveIndicatorColor
 import com.dimthomas.borutoapp.ui.theme.titleColor
 import com.dimthomas.borutoapp.ui.theme.welcomeScreenBackgroundColor
+import com.dimthomas.borutoapp.util.Constants.LAST_ON_BOARDING_PAGE
 import com.dimthomas.borutoapp.util.Constants.ON_BOARDING_PAGE_COUNT
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
@@ -143,7 +144,7 @@ fun FinishButton(
     ) {
         AnimatedVisibility(
             modifier = Modifier.fillMaxWidth(),
-            visible = pagerState.currentPage == 2
+            visible = pagerState.currentPage == LAST_ON_BOARDING_PAGE
         ) {
             Button(
                 onClick = onClick,
