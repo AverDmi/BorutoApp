@@ -33,6 +33,7 @@ fun HomeTopBar(onSearchClicked: () -> Unit) {
             IconButton(onClick = onSearchClicked) {
                 Icon(
                     imageVector = Icons.Default.Search,
+                    tint = MaterialTheme.colorScheme.topAppBarContentColor,
                     contentDescription = stringResource(R.string.search_icon)
                 )
             }
