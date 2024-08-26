@@ -2,10 +2,10 @@ package com.dimthomas.borutoapp.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.dimthomas.borutoapp.util.Constants.HERO_REMOTE_KEY_DATABASE
+import com.dimthomas.borutoapp.util.Constants.HERO_REMOTE_KEYS_DATABASE_TABLE
 
-@Entity(tableName = HERO_REMOTE_KEY_DATABASE)
-data class HeroRemoteKey(
+@Entity(tableName = HERO_REMOTE_KEYS_DATABASE_TABLE)
+data class HeroRemoteKeys(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
     val prevPage: Int?,
