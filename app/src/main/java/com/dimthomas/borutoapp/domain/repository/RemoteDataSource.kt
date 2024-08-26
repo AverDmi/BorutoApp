@@ -5,6 +5,6 @@ import com.dimthomas.borutoapp.domain.model.Hero
 import kotlinx.coroutines.flow.Flow
 
 interface RemoteDataSource {
-    fun getAllData(): Flow<PagingData<Hero>>
+    fun getAllHeroes(): Flow<PagingData<Hero>>
     fun searchHeroes(): Flow<PagingData<Hero>>
 }
